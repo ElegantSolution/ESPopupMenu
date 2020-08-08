@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/ESPopupMenu.svg?style=flat)](https://cocoapods.org/pods/ESPopupMenu)
 [![Platform](https://img.shields.io/cocoapods/p/ESPopupMenu.svg?style=flat)](https://cocoapods.org/pods/ESPopupMenu)
 
+## Description
+An esay-to-use popup menu for iOS that automatically calculates the frames and the arrow position according to the UI Component that pops it.
+
+[![](https://user-images.githubusercontent.com/69380955/89711000-25d3bf80-d9ba-11ea-8cad-21335e8465f8.png)]
+[![](https://user-images.githubusercontent.com/69380955/89711043-53206d80-d9ba-11ea-8a86-95e9024c09b7.png)]
+[![](https://user-images.githubusercontent.com/69380955/89711046-5582c780-d9ba-11ea-883c-df94026d17bb.png)]
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -25,11 +32,11 @@ pod 'ESPopupMenu', '~> 0.1.0'
 ```objective-c
 
 /// This will automatically pop a menu with an arrow pointed to the view.
-/// @param view  Any UI component that has a view of frame that can be used to calculate the menu's frame and arrow
-/// @param delegate ESPopupMenuDelegate, should not be nil
-/// @param numOfRows number of rows to show in menu
-/// @param rowWidth row's width
-/// @param rowHeight SINGLE row's height, NOT the height of entire menu
+/// @param view:  Any UI component that has a view of frame that can be used to calculate the menu's frame and arrow
+/// @param delegate: ESPopupMenuDelegate, should not be nil
+/// @param numOfRows: number of rows to show in menu
+/// @param rowWidth: row's width
+/// @param rowHeight: SINGLE row's height, NOT the height of entire menu
 [ESPopupMenu addPopupMenuTo:view delegate:self numOfRows:3 rowWidth:120 rowHeight:40];
 ```
 ### Delegate
@@ -37,14 +44,14 @@ pod 'ESPopupMenu', '~> 0.1.0'
 ```objective-c
 
 /// Return the title for each row in the menu here
-/// @param row the number of row for title
+/// @param row: the number of row for title
 - (nonnull NSString *)rowTitleFor:(NSInteger)row {
     
     return self.menuTitles[row];
 }
 
 /// Handle event when user tapped the menu
-/// @param row the number of row that has been tapped
+/// @param row: the number of row that has been tapped
 - (void)userDidTapMenu:(NSInteger)row {
     
     MyViewController* vc = [[MyViewController alloc] initWithNibName:nil bundle:nil];
@@ -57,14 +64,14 @@ pod 'ESPopupMenu', '~> 0.1.0'
 ```objetive-c
 
 /// Return the icon image for each row in the menu here
-/// @param row  the number of row for image
+/// @param row: the number of row for image
 - (UIImage *)imageFor:(NSInteger)row{
     
     return self.menuImages[row];
 }
 
 /// Return title text font size
-/// @param row the number of row for font size
+/// @param row: the number of row for font size
 -(CGFloat) titleFontSizeFor:(NSInteger) row{
 
     return 12;
