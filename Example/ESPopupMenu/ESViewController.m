@@ -48,14 +48,14 @@
 }
 
 - (nonnull NSString *)rowTitleFor:(NSInteger)row {
-    
+
     return self.menuTitles[row];
 }
 
 - (void)userDidTapMenu:(NSInteger)row {
-    
+
     HelloWorldViewController* helloVC = [[HelloWorldViewController alloc] initWithNibName:nil bundle:nil];
-    
+
     [self.navigationController pushViewController:helloVC animated:YES];
 }
 

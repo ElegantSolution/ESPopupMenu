@@ -340,7 +340,14 @@
     
     cell.textLabel.textColor = UIColor.whiteColor;
    
-    cell.textLabel.text = [self.delegate rowTitleFor:row];
+    if ([self.delegate respondsToSelector:@selector(rowTitleFor:)]){
+    
+        cell.textLabel.text = [self.delegate rowTitleFor:row];
+    }
+    else {
+     
+        NSLog(@"ESPopupMenu: Delegate Mandatory Method (rowTitleFor:) Not Implemented");
+    }
     
     if ([self.delegate respondsToSelector:@selector(titleFontSizeFor:)]){
         
@@ -388,7 +395,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self.delegate userDidTapMenu:indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(rowTitleFor:)]){
+    
+        [self.delegate userDidTapMenu:indexPath.row];
+    }
+    else {
+     
+        NSLog(@"ESPopupMenu: Delegate Mandatory Method (userDidTapMenu:) Not Implemented");
+    }
+    
     [self dismiss];
 }
 
