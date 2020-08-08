@@ -54,7 +54,7 @@ Simply with one line of code:
 ```
 ### Optional Delegate
 
-```objetive-c
+```objective-c
 
 /// Return the icon image for each row in the menu here
 /// @param row: the number of row for image
