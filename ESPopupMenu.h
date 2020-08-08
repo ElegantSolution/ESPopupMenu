@@ -25,19 +25,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ESPopupMenuDelegate <NSObject>
 
+/// Return the title for each row in the menu here
+/// @param row The number of row for title
 -(NSString*) rowTitleFor:(NSInteger) row;
--(void) userDidTouchMenu:(NSInteger) row;
+
+/// Handle event when user tapped the menu
+/// @param row The number of row that has been tapped
+-(void) userDidTapMenu:(NSInteger) row;
 
 @optional
 
+/// Return the icon image for each row in the menu here
+/// @param row  The number of row for image
 -(nullable UIImage*) imageFor:(NSInteger) row;
+
+/// Return title text font size
+/// @param row The number of row for font size
 -(CGFloat) titleFontSizeFor:(NSInteger) row;
 
 @end
 
 @interface ESPopupMenu : UIView
 
-
+/// This will automatically pop a menu with an arrow pointed to the view.
+/// @param view  Any UI component that has a view of frame that can be used to calculate the menu's frame and arrow
+/// @param delegate ESPopupMenuDelegate, should not be nil
+/// @param numOfRows Number of rows to show in menu
+/// @param rowWidth Row's width
+/// @param rowHeight SINGLE row's height, NOT the height of entire menu
 +(void) addPopupMenuTo:(id) view delegate:(id<ESPopupMenuDelegate>) delegate numOfRows:(NSInteger) numOfRows rowWidth:(CGFloat) rowWidth rowHeight:(CGFloat) rowHeight;
 
 @end

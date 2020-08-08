@@ -388,7 +388,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self.delegate userDidTouchMenu:indexPath.row];
+    [self.delegate userDidTapMenu:indexPath.row];
     [self dismiss];
 }
 

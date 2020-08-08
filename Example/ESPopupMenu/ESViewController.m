@@ -22,7 +22,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     self.menuTitles = @[@"Scan", @"Email", @"Chat"];
     
@@ -41,7 +40,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (nonnull NSString *)rowTitleFor:(NSInteger)row {
@@ -49,7 +47,7 @@
     return self.menuTitles[row];
 }
 
-- (void)userDidTouchMenu:(NSInteger)row {
+- (void)userDidTapMenu:(NSInteger)row {
     
     HelloWorldViewController* helloVC = [[HelloWorldViewController alloc] initWithNibName:nil bundle:nil];
     

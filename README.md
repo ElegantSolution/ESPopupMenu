@@ -23,15 +23,52 @@ pod 'ESPopupMenu', '~> 0.1.0'
 ## Usage
 
 ```objective-c
-//This will automatically show a menu with an arrow pointed to the view
-[ESPopupMenu addPopupMenuTo:view delegate:self numOfRows:3 rowWidth:150 rowHeight:40];
+
+/// This will automatically pop a menu with an arrow pointed to the view.
+/// @param view  Any UI component that has a view of frame that can be used to calculate the menu's frame and arrow
+/// @param delegate ESPopupMenuDelegate, should not be nil
+/// @param numOfRows number of rows to show in menu
+/// @param rowWidth row's width
+/// @param rowHeight SINGLE row's height, NOT the height of entire menu
+[ESPopupMenu addPopupMenuTo:view delegate:self numOfRows:3 rowWidth:120 rowHeight:40];
 ```
 ### Delegate
 
 ```objective-c
 
+/// Return the title for each row in the menu here
+/// @param row the number of row for title
+- (nonnull NSString *)rowTitleFor:(NSInteger)row {
+    
+    return self.menuTitles[row];
+}
 
+/// Handle event when user tapped the menu
+/// @param row the number of row that has been tapped
+- (void)userDidTapMenu:(NSInteger)row {
+    
+    MyViewController* vc = [[MyViewController alloc] initWithNibName:nil bundle:nil];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+```
+### Optional Delegate
 
+```objetive-c
+
+/// Return the icon image for each row in the menu here
+/// @param row  the number of row for image
+- (UIImage *)imageFor:(NSInteger)row{
+    
+    return self.menuImages[row];
+}
+
+/// Return title text font size
+/// @param row the number of row for font size
+-(CGFloat) titleFontSizeFor:(NSInteger) row{
+
+    return 12;
+}
 ```
 
 ## Author
