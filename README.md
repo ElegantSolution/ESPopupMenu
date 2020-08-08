@@ -10,12 +10,6 @@ An esay-to-use popup menu for iOS that automatically calculates the frames and t
 
 <img width="171" alt="1" src="https://user-images.githubusercontent.com/69380955/89711973-469f1380-d9c0-11ea-8f0e-6f4bbf64508f.png">     <img width="170" alt="2" src="https://user-images.githubusercontent.com/69380955/89711974-4868d700-d9c0-11ea-9011-32d929c3f608.png">    <img width="171" alt="3" src="https://user-images.githubusercontent.com/69380955/89711975-49016d80-d9c0-11ea-8645-f2009b32aa44.png">
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 ESPopupMenu is available through [CocoaPods](https://cocoapods.org). To install
