@@ -20,7 +20,7 @@ pod 'ESPopupMenu', '~> 0.1.5'
 ```
 
 ## Usage
-
+Simply with one line of code:
 ```objective-c
 
 /// This will automatically pop a menu with an arrow pointed to the view.
@@ -29,6 +29,7 @@ pod 'ESPopupMenu', '~> 0.1.5'
 /// @param numOfRows: number of rows to show in menu
 /// @param rowWidth: row's width
 /// @param rowHeight: SINGLE row's height, NOT the height of entire menu
+
 [ESPopupMenu addPopupMenuTo:view delegate:self numOfRows:3 rowWidth:120 rowHeight:40];
 ```
 ### Delegate
