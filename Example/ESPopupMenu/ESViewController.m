@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSArray* menuTitles;
 @property (nonatomic, strong) NSArray* menuImages;
 
+- (IBAction)bottomBtnTapped:(id)sender;
+
 @end
 
 @implementation ESViewController
@@ -27,9 +29,12 @@
     
     self.menuImages = @[[UIImage imageNamed:@"Scan"], [UIImage imageNamed:@"Email"], [UIImage imageNamed:@"Chat"]];
     
-    UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenu:)];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenu:)];
     
-    self.navigationItem.rightBarButtonItem = item;
+    UIBarButtonItem* leftItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showMenu:)];
+    
+    self.navigationItem.rightBarButtonItem = rightItem;
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
 
 -(void)showMenu:(id)sender{
@@ -57,6 +62,10 @@
 - (UIImage *)imageFor:(NSInteger)row{
     
     return self.menuImages[row];
+}
+
+- (IBAction)bottomBtnTapped:(id)sender {
+    [self showMenu:sender];
 }
 
 @end
