@@ -72,7 +72,7 @@ pod 'ESPopupMenu', '~> 0.1.5'
 /// @param row: the number of row for font size
 -(CGFloat) titleFontSizeFor:(NSInteger) row{
 
-    return 12;
+    return 12.0;
 }
 ```
 
