@@ -8,9 +8,7 @@
 ## Description
 An esay-to-use popup menu for iOS that automatically calculates the frames and the arrow position according to the UI Component that pops it.
 
-[![](https://user-images.githubusercontent.com/69380955/89711000-25d3bf80-d9ba-11ea-8cad-21335e8465f8.png)]
-[![](https://user-images.githubusercontent.com/69380955/89711043-53206d80-d9ba-11ea-8a86-95e9024c09b7.png)]
-[![](https://user-images.githubusercontent.com/69380955/89711046-5582c780-d9ba-11ea-883c-df94026d17bb.png)]
+<img width="171" alt="1" src="https://user-images.githubusercontent.com/69380955/89711973-469f1380-d9c0-11ea-8f0e-6f4bbf64508f.png">     <img width="170" alt="2" src="https://user-images.githubusercontent.com/69380955/89711974-4868d700-d9c0-11ea-9011-32d929c3f608.png">    <img width="171" alt="3" src="https://user-images.githubusercontent.com/69380955/89711975-49016d80-d9c0-11ea-8645-f2009b32aa44.png">
 
 ## Example
 
