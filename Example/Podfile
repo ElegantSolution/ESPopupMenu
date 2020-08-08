@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ESPopupMenu_Example' do
+  pod 'ESPopupMenu', :path => '../'
+
+  target 'ESPopupMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
