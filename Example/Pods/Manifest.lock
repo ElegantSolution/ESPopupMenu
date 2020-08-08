@@ -1,0 +1,16 @@
+PODS:
+  - ESPopupMenu (0.1.0)
+
+DEPENDENCIES:
+  - ESPopupMenu (from `../`)
+
+EXTERNAL SOURCES:
+  ESPopupMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ESPopupMenu: b4f536dcc9a26c2d6e973f533df5b691f609bde3
+
+PODFILE CHECKSUM: 32a2831dc95d3441deb4727f6a9a15b1cab226fb
+
+COCOAPODS: 1.8.4

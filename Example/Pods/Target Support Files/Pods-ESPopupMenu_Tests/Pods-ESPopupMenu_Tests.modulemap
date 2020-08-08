@@ -1,0 +1,6 @@
+framework module Pods_ESPopupMenu_Tests {
+  umbrella header "Pods-ESPopupMenu_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

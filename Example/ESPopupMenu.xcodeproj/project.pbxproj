@@ -23,6 +23,11 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7E0720FC315CE20374550700 /* Pods_ESPopupMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1BADF0B105C69864802052 /* Pods_ESPopupMenu_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AFBF112824DEBEDA00D547D1 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBF112524DEBEDA00D547D1 /* HelloWorldViewController.xib */; };
+		AFBF112924DEBEDA00D547D1 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBF112624DEBEDA00D547D1 /* HelloWorldViewController.m */; };
+		AFBF112D24DEBEE500D547D1 /* Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF112A24DEBEE500D547D1 /* Chat.png */; };
+		AFBF112F24DEBEE500D547D1 /* Email.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF112C24DEBEE500D547D1 /* Email.png */; };
+		AFBF113124DEC6E500D547D1 /* Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF113024DEC6E400D547D1 /* Scan.png */; };
 		F3BB48F81EB88D5CF2071B41 /* Pods_ESPopupMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC7ECD6F8DBA54A3ACFD90E /* Pods_ESPopupMenu_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,12 +65,18 @@
 		6EC7ECD6F8DBA54A3ACFD90E /* Pods_ESPopupMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESPopupMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7373212BC4DE521CF8BBCA6C /* Pods-ESPopupMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPopupMenu_Example.debug.xcconfig"; path = "Target Support Files/Pods-ESPopupMenu_Example/Pods-ESPopupMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		73D672BE19F55CC95F33518E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		73D672BE19F55CC95F33518E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7EE00E797BC1D7F5AA977C41 /* Pods-ESPopupMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPopupMenu_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ESPopupMenu_Tests/Pods-ESPopupMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		880B0C8BE3768E62752FFADC /* ESPopupMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ESPopupMenu.podspec; path = ../ESPopupMenu.podspec; sourceTree = "<group>"; };
+		880B0C8BE3768E62752FFADC /* ESPopupMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ESPopupMenu.podspec; path = ../ESPopupMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A1BADF0B105C69864802052 /* Pods_ESPopupMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESPopupMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1C2DECD450A3DA983102DEC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AFBF112524DEBEDA00D547D1 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
+		AFBF112624DEBEDA00D547D1 /* HelloWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		AFBF112724DEBEDA00D547D1 /* HelloWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		AFBF112A24DEBEE500D547D1 /* Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat.png; sourceTree = "<group>"; };
+		AFBF112C24DEBEE500D547D1 /* Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Email.png; sourceTree = "<group>"; };
+		AFBF113024DEC6E400D547D1 /* Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scan.png; sourceTree = "<group>"; };
+		D1C2DECD450A3DA983102DEC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D45CCBD9263E38FC7D39DF30 /* Pods-ESPopupMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESPopupMenu_Example.release.xcconfig"; path = "Target Support Files/Pods-ESPopupMenu_Example/Pods-ESPopupMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +143,12 @@
 		6003F593195388D20070C39A /* Example for ESPopupMenu */ = {
 			isa = PBXGroup;
 			children = (
+				AFBF112A24DEBEE500D547D1 /* Chat.png */,
+				AFBF112C24DEBEE500D547D1 /* Email.png */,
+				AFBF113024DEC6E400D547D1 /* Scan.png */,
+				AFBF112724DEBEDA00D547D1 /* HelloWorldViewController.h */,
+				AFBF112624DEBEDA00D547D1 /* HelloWorldViewController.m */,
+				AFBF112524DEBEDA00D547D1 /* HelloWorldViewController.xib */,
 				6003F59C195388D20070C39A /* ESAppDelegate.h */,
 				6003F59D195388D20070C39A /* ESAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +210,6 @@
 				7EE00E797BC1D7F5AA977C41 /* Pods-ESPopupMenu_Tests.debug.xcconfig */,
 				31D14327E2132DDC8AFA2756 /* Pods-ESPopupMenu_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +274,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,8 +294,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBF113124DEC6E500D547D1 /* Scan.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				AFBF112824DEBEDA00D547D1 /* HelloWorldViewController.xib in Resources */,
+				AFBF112F24DEBEE500D547D1 /* Email.png in Resources */,
+				AFBF112D24DEBEE500D547D1 /* Chat.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -364,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBF112924DEBEDA00D547D1 /* HelloWorldViewController.m in Sources */,
 				6003F59E195388D20070C39A /* ESAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ESViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

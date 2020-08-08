@@ -17,12 +17,26 @@ ESPopupMenu is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ESPopupMenu'
+pod 'ESPopupMenu', '~> 0.1.0'
+```
+
+## Usage
+
+```objective-c
+//This will automatically show a menu with an arrow pointed to the view
+[ESPopupMenu addPopupMenuTo:view delegate:self numOfRows:3 rowWidth:150 rowHeight:40];
+```
+### Delegate
+
+```objective-c
+
+
+
 ```
 
 ## Author
 
-ElegantSolution, eesoto@foxmail.com
+Yue Zhao @ElegantSolution, eesoto@foxmail.com
 
 ## License
 

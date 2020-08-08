@@ -1,0 +1,6 @@
+framework module ESPopupMenu {
+  umbrella header "ESPopupMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

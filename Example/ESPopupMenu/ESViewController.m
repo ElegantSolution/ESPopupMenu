@@ -7,8 +7,13 @@
 //
 
 #import "ESViewController.h"
+#import "HelloWorldViewController.h"
+#import "ESPopupMenu.h"
 
-@interface ESViewController ()
+@interface ESViewController ()<ESPopupMenuDelegate>
+
+@property (nonatomic, strong) NSArray* menuTitles;
+@property (nonatomic, strong) NSArray* menuImages;
 
 @end
 
@@ -18,12 +23,42 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.menuTitles = @[@"Scan", @"Email", @"Chat"];
+    
+    self.menuImages = @[[UIImage imageNamed:@"Scan"], [UIImage imageNamed:@"Email"], [UIImage imageNamed:@"Chat"]];
+    
+    UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenu:)];
+    
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+-(void)showMenu:(id)sender{
+    
+    [ESPopupMenu addPopupMenuTo:sender delegate:self numOfRows:3 rowWidth:120 rowHeight:40];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (nonnull NSString *)rowTitleFor:(NSInteger)row {
+    
+    return self.menuTitles[row];
+}
+
+- (void)userDidTouchMenu:(NSInteger)row {
+    
+    HelloWorldViewController* helloVC = [[HelloWorldViewController alloc] initWithNibName:nil bundle:nil];
+    
+    [self.navigationController pushViewController:helloVC animated:YES];
+}
+
+- (UIImage *)imageFor:(NSInteger)row{
+    
+    return self.menuImages[row];
 }
 
 @end
