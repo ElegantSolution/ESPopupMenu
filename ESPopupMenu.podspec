@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ESPopupMenu'
-  s.version          = '0.1.1'
+  s.version          = '0.1.5'
   s.summary          = 'An esay-to-use popup menu for iOS.'
 
 
